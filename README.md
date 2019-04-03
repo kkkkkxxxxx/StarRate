@@ -6,7 +6,7 @@
 
 ## 主要内容的介绍
 
-* `进行评分(支持点击,滑动)`<br>
+* `进行评分(支持点击,滑动,最少星星数设置)`<br>
 
 * `展示评分`<br>
 
@@ -52,8 +52,8 @@ Just download the project, and drag and drop the "StarRateView" folder in your p
 /// 创建视图对象（totalStarCount:总星星数量, currentStarCount:当前星星数, starSpace:星星的间隔）
 let starView = StarRateView(frame: CGRect(x: 0, y: 0, width: 120, height: 20),totalStarCount: 5 ,currentStarCount: 0 ,starSpace: 5)
 
-/// 显示星级视图（type:星星类型, isPanEnable:是否可滑动评分） 
-starView.show(type: .default, isPanEnable: true) { (score) in
+/// 显示星级视图（type:星星类型, isPanEnable:是否可滑动评分, leastStar:评分的最少星星数） 
+starView.show(type: .default, isPanEnable: true, leastStar: 3) { (score) in
     /// 评分后的回调方法
     <#code#>
 }

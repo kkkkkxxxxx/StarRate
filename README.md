@@ -53,7 +53,7 @@ Just download the project, and drag and drop the "StarRateView" folder in your p
 let starView = StarRateView(frame: CGRect(x: 0, y: 0, width: 120, height: 20),totalStarCount: 5 ,currentStarCount: 0 ,starSpace: 5)
 
 /// 显示星级视图（type:星星类型, isPanEnable:是否可滑动评分, leastStar:评分的最少星星数） 
-starView.show(type: .default, isPanEnable: true, leastStar: 3) { (score) in
+starView.show(type: .default, isPanEnable: true, leastStar: 0) { (score) in
     /// 评分后的回调方法
     <#code#>
 }
